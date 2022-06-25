@@ -1,0 +1,15 @@
+{
+  "name": "three-glsl-minifier",
+  "version": "0.1.0",
+  "description": "Minify threejs glsl sources",
+  "type": "module",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "keywords": [
+    "minifier"
+  ],
+  "author": "ycw(https://github.com/ycw)",
+  "license": "MIT"
+}
