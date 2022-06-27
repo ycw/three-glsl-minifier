@@ -19,7 +19,8 @@ export default (slices, code) => {
     }
 
     if (slice.type === 'macro') {
-      if (is_macro_at_head(slice, code)) {
+
+      if (!is_macro_at_head(slice, code)) {
         chars.push('\n')
       }
       chars.push(
@@ -94,5 +95,5 @@ function is_macro_has_directive(slice, code) {
 }
 
 function is_macro_at_head(slice, code) {
-  return code.substring(0, slice.start).trim().length > 0
+  return code.substring(0, slice.start).trim().length === 0
 }
